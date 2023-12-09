@@ -204,6 +204,8 @@
 
 .main__card-image {
   inline-size: 100%;
+  block-size: clamp(30rem, 22.9577rem + 26.2911vw, 50rem);
+  object-fit: cover;
   display: block;
   border-block-start: 2px solid var(--card-border);
   border-block-end: 2px solid var(--card-border);
