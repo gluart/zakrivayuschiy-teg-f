@@ -1,1 +1,48 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+
+  /* Fonts */
+
+  --inter-variable-main-font: 'Inter-Variable';
+  --press-start2p-accent-font: 'PressStart2P-Regular';
+
+  /* theme-light  */
+
+ --font-weight-light: 400;
+ --font-weight-bold: 700;
+ --themes-main-color: #000;
+ --bg-color-1: #d3d3d3;
+ --bg-color-2: #e7e7e7;
+ --bg-color-3: #1a1a1a;
+ --header-theme-color: #fff;
+ --card-color: #fff;
+ --card-border: #000;
+ --button-list-item-underline: #000;
+ --button-shadow: #000;
+ --text-color-blend-button: #fff;
+ --border-like-icon: #000;
+ --contour-heart-color: #000;
+ --sparks-heart-color: #ff0000;
+ --core-accent-heart-color: #000;
+
+
+  /* theme-dark */
+
+ --font-weight-light: 400;
+ --font-weight-bold: 785;
+ --themes-main-color: #00CC14;
+ --bg-color-1: #000;
+ --bg-color-2: #007f0c;
+ --bg-color-3: #004306;
+ --header-theme-color: #000;
+ --card-color: #000;
+ --card-border: #00cc14;
+ --button-list-item-underline: #00cc14;
+ --button-shadow: #00cc14;
+ --text-color-blend-button: #00cc14;
+ --border-like-icon: #00cc14;
+ --contour-heart-color: #00cc14;
+ --sparks-heart-color: #ff0000;
+ --core-accent-heart-color: #00cc14;
+}

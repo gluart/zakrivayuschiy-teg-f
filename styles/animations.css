@@ -12,3 +12,118 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes pointer {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes beating-heart {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes sparks {
+  0% {
+    fill: none;
+  }
+
+  100% {
+    fill: var(--sparks-heart-color);
+  }
+}
+
+
+
+/* ------------------------------------- Styles for heart icon -------------------------------------------*/
+
+
+.like-icon {
+  inline-size: 39px;
+  block-size: 36px;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill 0.1s ease;
+}
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s ease;
+}
+
+.sparks {
+  fill: transparent;
+  transition: fill 0.3s ease;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--core-accent-heart-color);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--core-accent-heart-color);
+  transition: fill 0.1s linear;
+}
+
+.card__icon-button:active .core {
+  fill: var(--sparks-heart-color);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--sparks-heart-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .heart {
+  animation-name: beating-heart;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+  /* animation-play-state: running; */
+}
+
+.like-icon.is-liked .sparks {
+  animation-name: sparks;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--sparks-heart-color);
+  transition: fill 0.3s ease 0.06s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--sparks-heart-color);
+  transition: fill 0.3s ease;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--sparks-heart-color);
+  transition: fill 0.3s ease;
+}
+
+.like-icon:hover.is-liked .core {
+  fill: var(--sparks-heart-color);
+}
+
+.like-icon:hover.is-liked .main-body {
+  fill: var(--sparks-heart-color);
+}
