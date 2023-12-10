@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark">
     <title>Закрывающий тег</title>
     <link rel="icon" href="./images/favicon.ico" sizes="any">
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./images/apple-favicon.png">
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <link rel="stylesheet" href="./styles/themes.css">
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
@@ -22,9 +22,9 @@
 
       <section class="header__wrapper">
 
-        <h1 class="header__title"> &lt/HTML&gt </h1>
+        <a class="header__title"> &lt;/HTML&gt;</a>
 
-        <h2 class="header-subtitle">закрывающий тег</h2>
+        <h1 class="header-subtitle">закрывающий тег</h1>
 
         <nav class="theme-menu header__theme-menu">
           <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -81,7 +81,7 @@
               loading="lazy"
               class="main__card-image" 
               >
-              <span class="main__card-watermark">&lt/HTML&gt</span>
+              <span class="main__card-watermark">&lt;/HTML&gt;</span>
             </div>
 
             <div class="main__card-text-wrapper">
@@ -145,7 +145,7 @@
             loading="lazy"
             class="main__card-image image-saturate" 
             >
-            <span class="main__card-watermark">&lt/HTML&gt</span>
+            <span class="main__card-watermark">&lt;/HTML&gt;</span>
           </div>
 
           <div class="main__card-text-wrapper">
@@ -209,7 +209,7 @@
               loading="lazy"
               class="main__card-image image-saturate-accent" 
               >
-              <span class="main__card-watermark">&ltCSS-experience&gt</span>
+              <span class="main__card-watermark">&lt;CSS-experience&gt;</span>
             </div>
 
             <div class="main__card-text-wrapper">
@@ -273,7 +273,7 @@
               loading="lazy"
               class="main__card-image image-hue-rotate" 
               >
-              <span class="main__card-watermark">&ltКак много всего&gt</span>
+              <span class="main__card-watermark">&lt;Как много всего&gt;</span>
             </div>
 
             <div class="main__card-text-wrapper">
@@ -337,7 +337,7 @@
               loading="lazy"
               class="main__card-image image-invert" 
               >
-              <span class="main__card-watermark">Поддержка</span>
+              <span class="main__card-watermark">&lt;Поддержка&gt;</span>
             </div>
 
             <div class="main__card-text-wrapper">
@@ -401,7 +401,7 @@
               loading="lazy"
               class="main__card-image image-sepia" 
               >
-              <span class="main__card-watermark">&ltСложностьВквадрате&gt</span>
+              <span class="main__card-watermark">&lt;СложностьВквадрате&gt;</span>
             </div>
 
             <div class="main__card-text-wrapper">
@@ -465,7 +465,7 @@
               loading="lazy"
               class="main__card-image image-blur" 
               >
-              <span class="main__card-watermark">&ltНовая стори&gt</span>
+              <span class="main__card-watermark">&lt;Новая стори&gt;</span>
             </div>
 
             <div class="main__card-text-wrapper">
@@ -529,7 +529,7 @@
               loading="lazy"
               class="main__card-image image-hue-blur" 
               >
-              <span class="main__card-watermark">&ltexperience&gt</span>
+              <span class="main__card-watermark">&lt;experience&gt;</span>
             </div>
 
             <div class="main__card-text-wrapper">
@@ -594,7 +594,7 @@
         >
 
           <svg class="main__save-on-mind__floppy">
-            <use href="#floppy">
+            <use href="./svg/floppy.svg#floppy">
           </svg>
 
           <span class="button__text">
@@ -603,11 +603,11 @@
           
         </button>
 
-        <dialog id="dialog-id">
+        <dialog id="dialog-id" class="dialog-id">
             <div class="dialog-window">
 
               <svg class="dialog-window__floppy">
-                <use href="#floppy">
+                <use href="./svg/floppy.svg#floppy">
               </svg>
 
               <p class="dialog-window__text">
@@ -615,13 +615,15 @@
               </p>
             </div>
           
-            <button 
-              type="button"
-              onclick="window['dialog-id'].close()"
-              class="dialog-window__button"
-            >
+            <form method="dialog">
+              <button 
+                type="submit"
+                class="dialog-window__button"
+              >
               <span class="dialog-window__span">Ok</span>
-            </button>
+              </button>
+            </form>
+
         </dialog>
 
       </section>
@@ -630,18 +632,5 @@
     
     <script src="./scripts/like.js"></script>
   </body>
+
 </html>
-
-<svg display="none" xmlns="http://www.w3.org/2000/svg">
-  
-  <symbol id="floppy" viewBox="0 0 21 21" fill="currentColor">
-
-      <path d="M0 0h1.615v1.615H0zm0 1.615h1.615V3.23H0zm0 1.616h1.615v1.615H0zm0 1.615h1.615v1.615H0zm0 1.615h1.615v1.615H0zm0 1.616h1.615v1.615H0zm0 1.615h1.615v1.615H0zm0 1.616h1.615v1.615H0zm0 1.615h1.615v1.615H0zm0 1.616h1.615v1.615H0zm0 1.615h1.615v1.615H0zm0 1.615h1.615v1.615H0zm0 1.616h1.615V21H0zM17.77 0v1.615h-1.616V0zm-1.616 0v1.615h-1.615V0zm-1.615 0v1.615h-1.615V0zm-1.616 0v1.615h-1.615V0zm-1.615 0v1.615H9.693V0zM9.692 0v1.615H8.077V0zM8.077 0v1.615H6.462V0zM6.462 0v1.615H4.847V0zM4.846 0v1.615H3.231V0zM3.23 0v1.615H1.617V0zm16.155 1.616V3.23H17.77V1.616zM4.846 3.23v1.616H3.231V3.23zm0-1.615V3.23H3.231V1.615zm0 3.231v1.615H3.231V4.846zm11.308-1.615v1.615h-1.615V3.231zm0-1.616V3.23h-1.615V1.615zm0 3.231v1.615h-1.615V4.846zM12.923 3.23v1.616h-1.615V3.23zm0-1.615V3.23h-1.615V1.615zm0 3.231v1.615h-1.615V4.846zm3.231 1.616v1.615H14.54V6.462zm-1.615 0v1.615h-1.615V6.462zm-1.615-.001v1.615h-1.615V6.461zm-1.616.001v1.615H9.693V6.462zm-1.615-.001v1.615H8.078V6.461zm-1.616.001v1.615H6.462V6.462zm-1.615 0v1.615H4.847V6.462zm-1.615-.001v1.615H3.232V6.461zm12.922 4.846v1.615h-1.615v-1.615zm-1.616.001v1.615h-1.615v-1.615z"/>
-
-      <path d="M14.538 11.308v1.615h-1.615v-1.615zm-1.615-.001v1.615h-1.615v-1.615zm-1.616.001v1.615H9.692v-1.615zm-1.615-.001v1.615H8.077v-1.615zm-1.616.001v1.615H6.461v-1.615zm-1.615 0v1.615H4.846v-1.615zm-1.615-.001v1.615H3.23v-1.615zm12.924 1.616v1.615h-1.616v-1.615zm-12.924 0v1.615H3.231v-1.615z"/>
-
-      <path d="M17.769 14.538v1.615h-1.615v-1.615zm-12.923 0v1.615H3.23v-1.615zm12.924 1.615v1.615h-1.616v-1.615zm-12.924.001v1.615H3.231v-1.615zm0 1.615v1.615H3.231v-1.615zm12.924 0v1.615h-1.616v-1.615zm1.614 1.616V21H17.77v-1.615zm-1.614-.001V21h-1.616v-1.615zm-1.616.001V21h-1.615v-1.615zm-1.616 0V21h-1.615v-1.615zm-1.615 0V21h-1.615v-1.615zm-1.616 0V21H9.692v-1.615zm-1.615 0V21H8.077v-1.615zm-1.615 0V21H6.462v-1.615zm-1.616 0V21H4.846v-1.615zm-1.615 0V21H3.231v-1.615zm-1.616 0V21H1.617v-1.615zM21 21h-1.615v-1.615H21zm0-1.615h-1.615V17.77H21zm0-1.616h-1.615v-1.615H21zm0-1.615h-1.615v-1.615H21zm0-1.616h-1.615v-1.615H21zm0-1.615h-1.615v-1.615H21zm0-1.616h-1.615V9.692H21z"/>
-
-      <path d="M21 9.693h-1.615V8.078H21zm0-1.616h-1.615V6.462H21zm0-1.615h-1.615V4.847H21zm0-1.616h-1.615V3.231H21z"/>
-  </symbol>
-</svg>
